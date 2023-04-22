@@ -1,0 +1,123 @@
+2023-04-18-10:22:12 DEBUG  BaseTest: setup: configuration started
+2023-04-18-10:22:13 DEBUG Report configuration is success
+2023-04-18-10:22:15 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-10:22:15 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-10:22:15 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-10:22:15 DEBUG App is launched
+2023-04-18-10:22:16 DEBUG verified given App is launched
+2023-04-18-10:22:17 DEBUG User name given
+2023-04-18-10:22:17 DEBUG Passwordgiven
+2023-04-18-10:22:18 DEBUG clicked the login button
+2023-04-18-10:22:21 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-10:22:21 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-10:22:21 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-10:22:21 DEBUG App is launched
+2023-04-18-10:22:22 DEBUG verified given App is launched
+2023-04-18-10:22:22 DEBUG User name given
+2023-04-18-10:22:22 DEBUG Passwordgiven
+2023-04-18-10:22:24 DEBUG clicked the login button
+2023-04-18-10:22:26 DEBUG Leads page is visible
+2023-04-18-10:22:27 DEBUG Leads page elements are visible
+2023-04-18-11:02:07 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:02:07 DEBUG Report configuration is success
+2023-04-18-11:02:09 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:02:09 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:02:09 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:02:09 DEBUG App is launched
+2023-04-18-11:02:10 DEBUG verified given App is launched
+2023-04-18-11:02:10 DEBUG User name given
+2023-04-18-11:02:10 DEBUG Passwordgiven
+2023-04-18-11:02:11 DEBUG clicked the login button
+2023-04-18-11:02:13 DEBUG Leads page is visible
+2023-04-18-11:02:14 DEBUG Leads page elements are visible
+2023-04-18-11:13:47 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:13:47 DEBUG Report configuration is success
+2023-04-18-11:13:48 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:13:48 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:13:48 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:13:48 DEBUG App is launched
+2023-04-18-11:13:49 DEBUG verified given App is launched
+2023-04-18-11:13:49 DEBUG User name given
+2023-04-18-11:13:49 DEBUG Passwordgiven
+2023-04-18-11:13:50 DEBUG clicked the login button
+2023-04-18-11:13:53 DEBUG Leads page is visible
+2023-04-18-11:14:49 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:14:49 DEBUG Report configuration is success
+2023-04-18-11:14:50 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:14:50 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:14:50 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:14:50 DEBUG App is launched
+2023-04-18-11:14:51 DEBUG verified given App is launched
+2023-04-18-11:14:51 DEBUG User name given
+2023-04-18-11:14:51 DEBUG Passwordgiven
+2023-04-18-11:14:52 DEBUG clicked the login button
+2023-04-18-11:14:54 DEBUG Leads page is visible
+2023-04-18-11:14:56 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:14:56 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:14:56 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:14:56 DEBUG App is launched
+2023-04-18-11:14:57 DEBUG verified given App is launched
+2023-04-18-11:14:57 DEBUG User name given
+2023-04-18-11:14:57 DEBUG Passwordgiven
+2023-04-18-11:14:59 DEBUG clicked the login button
+2023-04-18-11:15:01 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:15:01 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:15:01 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:15:01 DEBUG App is launched
+2023-04-18-11:15:02 DEBUG verified given App is launched
+2023-04-18-11:15:02 DEBUG User name given
+2023-04-18-11:15:03 DEBUG Passwordgiven
+2023-04-18-11:15:04 DEBUG clicked the login button
+2023-04-18-11:15:05 DEBUG Leads page is visible
+2023-04-18-11:15:06 DEBUG Leads page elements are visible
+2023-04-18-11:22:14 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:22:14 DEBUG Report configuration is success
+2023-04-18-11:22:16 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:22:16 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:22:16 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:22:16 DEBUG App is launched
+2023-04-18-11:22:16 DEBUG verified given App is launched
+2023-04-18-11:22:16 DEBUG User name given
+2023-04-18-11:22:17 DEBUG Passwordgiven
+2023-04-18-11:22:18 DEBUG clicked the login button
+2023-04-18-11:22:20 DEBUG Leads page is visible
+2023-04-18-11:23:07 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:23:07 DEBUG Report configuration is success
+2023-04-18-11:23:08 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:23:08 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:23:08 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:23:08 DEBUG App is launched
+2023-04-18-11:23:09 DEBUG verified given App is launched
+2023-04-18-11:23:09 DEBUG User name given
+2023-04-18-11:23:09 DEBUG Passwordgiven
+2023-04-18-11:23:11 DEBUG clicked the login button
+2023-04-18-11:23:14 DEBUG Leads page is visible
+2023-04-18-11:23:15 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:23:15 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:23:15 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:23:15 DEBUG App is launched
+2023-04-18-11:23:15 DEBUG verified given App is launched
+2023-04-18-11:23:15 DEBUG User name given
+2023-04-18-11:23:16 DEBUG Passwordgiven
+2023-04-18-11:23:17 DEBUG clicked the login button
+2023-04-18-11:23:19 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:23:19 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:23:19 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:23:19 DEBUG App is launched
+2023-04-18-11:23:20 DEBUG verified given App is launched
+2023-04-18-11:23:20 DEBUG User name given
+2023-04-18-11:23:21 DEBUG Passwordgiven
+2023-04-18-11:23:22 DEBUG clicked the login button
+2023-04-18-11:23:24 DEBUG Leads page is visible
+2023-04-18-11:23:25 DEBUG Leads page elements are visible
+2023-04-18-11:31:04 DEBUG  BaseTest: setup: configuration started
+2023-04-18-11:31:04 DEBUG Report configuration is success
+2023-04-18-11:31:05 DEBUG BaseTest : setDriver : driver configuration done
+2023-04-18-11:31:05 DEBUG BaseTest: setDriver: driver configuration done
+2023-04-18-11:31:05 DEBUG BaseTest: setDriver:test obj created
+2023-04-18-11:31:05 DEBUG App is launched
+2023-04-18-11:31:06 DEBUG verified given App is launched
+2023-04-18-11:31:06 DEBUG User name given
+2023-04-18-11:31:06 DEBUG Passwordgiven
+2023-04-18-11:31:08 DEBUG clicked the login button
+2023-04-18-11:31:10 DEBUG Leads page is visible
