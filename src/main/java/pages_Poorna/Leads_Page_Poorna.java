@@ -70,20 +70,25 @@ public class Leads_Page_Poorna extends Base_Page_Poorna{
 		}
 	}
 	
-	/*
-	 * public boolean verifyLeadsDropDown(WebDriver driver) throws IOException {
-	 * String[]
-	 * expectedUserMenuItems=Properties_Files_Utils_Poorna.readLeads_testdata(
-	 * "Leads").split(","); for (int i =0; i<expectedUserMenuItems.length; i++){
-	 * String actualUserMenuItems =clickDropDownLeads.getText(); if
-	 * (actualUserMenuItems.equals(expectedUserMenuItems[i])) {
-	 * System.out.println("The option" + expectedUserMenuItems[i] + "passed");
-	 * return true; } else {
-	 * 
-	 * System.out.println( "Actual option : " + actualUserMenuItems +
-	 * "Expected option" + expectedUserMenuItems[i]); return false; } }
-	 */
-	//not working
+	
+	  public boolean verifyLeadsDropDown(WebDriver driver) throws IOException {
+	  String[] expectedUserMenuItems=Properties_Files_Utils_Poorna.readLeads_testdata("leads.items").split(","); 
+	  boolean isOptionverified = true;
+	  for (int i =0; i<expectedUserMenuItems.length; i++){
+		  
+		  String actualUserMenuItems =clickDropDownLeads.getText(); 
+		  if(actualUserMenuItems.equals(expectedUserMenuItems.toString())) {
+			  System.out.println("The option" + expectedUserMenuItems[i] + "passed");
+		  } else {	  
+			  System.out.println( "Actual option : " + actualUserMenuItems +
+			  "Expected option" + expectedUserMenuItems[i]); 
+			  isOptionverified= false; 
+		  }  
+	  }
+	  return isOptionverified;
+	  }
+	  
+	 	//not working
 	public void dropDownClickToday_Leads(WebDriver driver) {
 		// Select view = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));
 		Common_Utils_Poorna.waitForElement(driver, dropDown);

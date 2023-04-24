@@ -1,5 +1,7 @@
 package test_Poorna;
 
+import static org.junit.Assert.assertThat;
+
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -105,7 +107,8 @@ public class Leads_Page_Test_Poorna extends Base_Test_Poorna {
 		test.info("Leads page droup down elements are visible");
 		logger.debug("Leads page elements are visible");
 
-		// LeadsP.verifyLeadsDropDown(driver);
+	 LeadsP.verifyLeadsDropDown(driver);
+	 Assert.assertTrue( LeadsP.verifyLeadsDropDown(driver), "VerifiedleadsDropDOwn");
 		// LeadsP.clickDropDownLeads.getText();
 	}
 

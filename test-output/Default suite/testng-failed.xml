@@ -8,7 +8,7 @@
           <include name="setUp"/>
           <include name="teardown"/>
           <include name="setDriver"/>
-          <include name="Functionality_of_Go_Button_TC22"/>
+          <include name="validate_Leads_Select_View_TC_21"/>
         </methods>
       </class> <!-- test_Poorna.Leads_Page_Test_Poorna -->
     </classes>

@@ -39,7 +39,7 @@ public static String readContacts_testdata(String skey) throws IOException {
 
 public static String readLeads_testdata(String skey) throws IOException {
 	String sValue="";
-	FileInputStream fis=new FileInputStream(new File(File_constants_Poorna.CONTACTS_PAGE_LASTNAME_UPDATE));
+	FileInputStream fis=new FileInputStream(new File(File_constants_Poorna.LEADS_MENU_TEST_DATA_FILE_PATH));
 	Properties p=new Properties();
 	p.load(fis);
 	sValue=p.getProperty(skey);

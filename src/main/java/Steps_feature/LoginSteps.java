@@ -1,5 +1,9 @@
 package Steps_feature;
 
+import java.util.List;
+import java.util.Map;
+
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
 public class LoginSteps {
@@ -35,5 +39,12 @@ public class LoginSteps {
 	    System.out.println("password"+string2);
 		
 	}
+	@Then("User should see the error message on the login screen")
+	public void user_should_see_the_error_message_on_the_login_screen() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new io.cucumber.java.PendingException();
+	}
+	}
 
-}
+
+

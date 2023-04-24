@@ -2,69 +2,37 @@
 <testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-18T11:31:04 CDT" name="Default suite" finished-at="2023-04-18T11:31:10 CDT" duration-ms="5820">
+  <suite started-at="2023-04-22T14:37:03 CDT" name="Default suite" finished-at="2023-04-22T14:37:14 CDT" duration-ms="11233">
     <groups>
     </groups>
-    <test started-at="2023-04-18T11:31:04 CDT" name="Default test" finished-at="2023-04-18T11:31:10 CDT" duration-ms="5820">
+    <test started-at="2023-04-22T14:37:03 CDT" name="Default test" finished-at="2023-04-22T14:37:14 CDT" duration-ms="11233">
       <class name="test_Poorna.Leads_Page_Test_Poorna">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@3a320ade]" started-at="2023-04-18T11:31:04 CDT" name="setUp" finished-at="2023-04-18T11:31:04 CDT" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@7fcbe147]" started-at="2023-04-22T14:37:03 CDT" name="setUp" finished-at="2023-04-22T14:37:03 CDT" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver(java.lang.reflect.Method)[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@3a320ade]" started-at="2023-04-18T11:31:04 CDT" name="setDriver" finished-at="2023-04-18T11:31:05 CDT" duration-ms="1270" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.reflect.Method)[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@7fcbe147]" started-at="2023-04-22T14:37:03 CDT" name="setDriver" finished-at="2023-04-22T14:37:04 CDT" duration-ms="1404" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test_Poorna.Leads_Page_Test_Poorna.Functionality_of_Go_Button_TC22() throws java.io.IOException]]>
+                <![CDATA[public void test_Poorna.Leads_Page_Test_Poorna.validate_Leads_Select_View_TC_21() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="Functionality_of_Go_Button_TC22()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@3a320ade]" started-at="2023-04-18T11:31:05 CDT" name="Functionality_of_Go_Button_TC22" finished-at="2023-04-18T11:31:10 CDT" duration-ms="4521" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="validate_Leads_Select_View_TC_21()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@7fcbe147]" started-at="2023-04-22T14:37:04 CDT" name="validate_Leads_Select_View_TC_21" finished-at="2023-04-22T14:37:14 CDT" duration-ms="9776" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title='Go!']"}
-  (Session info: chrome=112.0.5615.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFOGEP19', ip: '192.168.1.239', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\poorn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a00217e3472de6820d2ed42ffb6c1643
-*** Element info: {Using=xpath, value=//*[@title='Go!']}]]>
+              <![CDATA[VerifiedleadsDropDOwn expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title='Go!']"}
-  (Session info: chrome=112.0.5615.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFOGEP19', ip: '192.168.1.239', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\poorn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a00217e3472de6820d2ed42ffb6c1643
-*** Element info: {Using=xpath, value=//*[@title='Go!']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-at pages_Poorna.Leads_Page_Poorna.isclickGoVisible(Leads_Page_Poorna.java:98)
-at test_Poorna.Leads_Page_Test_Poorna.Functionality_of_Go_Button_TC22(Leads_Page_Test_Poorna.java:161)
+              <![CDATA[java.lang.AssertionError: VerifiedleadsDropDOwn expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at test_Poorna.Leads_Page_Test_Poorna.validate_Leads_Select_View_TC_21(Leads_Page_Test_Poorna.java:111)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,11 +63,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functionality_of_Go_Button_TC22 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@3a320ade]" started-at="2023-04-18T11:31:10 CDT" name="teardown" finished-at="2023-04-18T11:31:10 CDT" duration-ms="322" status="PASS">
+        </test-method> <!-- validate_Leads_Select_View_TC_21 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_Poorna.Leads_Page_Test_Poorna@7fcbe147]" started-at="2023-04-22T14:37:14 CDT" name="teardown" finished-at="2023-04-22T14:37:14 CDT" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
