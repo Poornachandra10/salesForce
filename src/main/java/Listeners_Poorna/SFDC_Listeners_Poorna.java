@@ -25,8 +25,8 @@ Base_Test_Poorna.test.pass(MarkupHelper.createLabel(result.getName()+" passed", 
 @Override
 public void onTestFailure(ITestResult result) {
 	try {
-		
-		Base_Test_Poorna.test.addScreenCaptureFromPath(Common_Utils_Poorna.captureScreenShot(getDriver()));
+		String screenShotPath= Common_Utils_Poorna.captureScreenShot(getDriver());
+		Base_Test_Poorna.test.addScreenCaptureFromPath(screenShotPath);
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

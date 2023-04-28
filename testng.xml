@@ -7,6 +7,11 @@
 	  <class name="test_Poorna.User_Menu_Page_Test_Poorna">
 	  </class>
       </classes>
+      
+
+
+
+
   
   </test> <!-- Test/smoke -->
 </suite> <!-- Suite/smoke -->

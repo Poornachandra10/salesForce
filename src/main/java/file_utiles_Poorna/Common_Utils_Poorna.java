@@ -46,11 +46,12 @@ public static void moveToElement(WebDriver driver, WebElement element) {
 	}
 	
 	  public static String captureScreenShot(WebDriver driver) throws IOException {
-	  TakesScreenshot sc = (TakesScreenshot) driver; String sFileNamePrefix = new
-	  SimpleDateFormat("yyyyMMddHHmmss").format(new Date()); String filePath =
-	  System.getProperty("user.dir")+
-	  "\\src\\main\\resources\\reports\\"+sFileNamePrefix+"_SFDC.PNG"; File src =
-	  sc.getScreenshotAs(OutputType.FILE); File dst = new File(filePath);
+	  TakesScreenshot sc = (TakesScreenshot) driver;
+	  String sFileNamePrefix = new SimpleDateFormat("yyyyMMddHHmmss")
+			  .format(new Date()); 
+	  String filePath =	  System.getProperty("user.dir")+"\\src\\main\\resources\\reports\\"+sFileNamePrefix+"_SFDC.PNG"; 
+	  File src = sc.getScreenshotAs(OutputType.FILE); 
+	  File dst = new File(filePath);
 	  FileUtils.copyFile(src, dst); 
 	  return filePath;
 	  }

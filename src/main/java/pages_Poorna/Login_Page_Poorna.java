@@ -1,5 +1,7 @@
 package pages_Poorna;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -47,6 +49,13 @@ public class Login_Page_Poorna extends Base_Page_Poorna {
 
 	@FindBy(xpath="//*[@id='userNavLabel']")
 	public WebElement homeUserMenu;
+	
+	@FindBy(id = "userNav-menuItems/a[4]")
+	public WebElement Logout;
+
+	@FindBy(xpath = "//div[@id='userNav-menuItems']/a")
+	public List<WebElement> userMenuOptions;
+
 
 	/*
 	 * @FindBy(id = "userNavLabel") public WebElement homeUserMenu;
@@ -144,6 +153,7 @@ public boolean isLoginPageDisplayed(WebDriver driver) {
 	}
 
 	public boolean logOut(WebDriver driver) {
+		
 		return this.selectOptionFromUserMenuOption(driver, "Logout");
 	}
 	
@@ -157,5 +167,14 @@ public boolean isLoginPageDisplayed(WebDriver driver) {
 			System.out.println("forgotPassword button  is not visible");
 		}
 
-	}}
+	}
+	
+public void clicklogout(WebDriver driver) {
+	if(homeUserMenu.isDisplayed()) {
+		homeUserMenu.click();
+		Common_Utils_Poorna.waitForElement(driver, Logout);
+		Logout.click();
+	}
+	}
+}
 

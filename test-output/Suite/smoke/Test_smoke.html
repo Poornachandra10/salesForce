@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 12 17:52:08 CDT 2023</td>
+<td>Started on:</td><td>Wed Apr 26 18:40:35 CDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44782 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41667 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test_Poorna.User_Menu_Page_Test_Poorna.checkDeveloperConsole_TC_08()'><b>checkDeveloperConsole_TC_08</b><br>Test class: test_Poorna.User_Menu_Page_Test_Poorna</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.get(Unknown Source)
-	at pages_Poorna.User_Menu_Page_Poorna.verifyUserMenuItems(User_Menu_Page_Poorna.java:306)
-	at test_Poorna.User_Menu_Page_Test_Poorna.checkDeveloperConsole_TC_08(User_Menu_Page_Test_Poorna.java:137)
+<td title='test_Poorna.User_Menu_Page_Test_Poorna.UserDrops_TC07()'><b>UserDrops_TC07</b><br>Test class: test_Poorna.User_Menu_Page_Test_Poorna</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&apos;userNavLabel&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-LFOGEP19&apos;, ip: &apos;192.168.1.239&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at pages_Poorna.User_Menu_Page_Poorna.clickOnUserMenu(User_Menu_Page_Poorna.java:356)
+	at test_Poorna.User_Menu_Page_Test_Poorna.UserDrops_TC07(User_Menu_Page_Test_Poorna.java:140)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738396212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1738396212'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.get(Unknown Source)
-	at pages_Poorna.User_Menu_Page_Poorna.verifyUserMenuItems(User_Menu_Page_Poorna.java:306)
-	at test_Poorna.User_Menu_Page_Test_Poorna.checkDeveloperConsole_TC_08(User_Menu_Page_Test_Poorna.java:137)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1340928776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1340928776'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&apos;userNavLabel&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-LFOGEP19&apos;, ip: &apos;192.168.1.239&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at pages_Poorna.User_Menu_Page_Poorna.clickOnUserMenu(User_Menu_Page_Poorna.java:356)
+	at test_Poorna.User_Menu_Page_Test_Poorna.UserDrops_TC07(User_Menu_Page_Test_Poorna.java:140)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,8 +136,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>14</td>
-<td>test_Poorna.User_Menu_Page_Test_Poorna@eb6449b</td></tr>
+<td>3</td>
+<td>test_Poorna.User_Menu_Page_Test_Poorna@6326d182</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -144,30 +148,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test_Poorna.Login_Test_Poorna.PasswordRest_Tc04_A()'><b>PasswordRest_Tc04_A</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
+<td title='test_Poorna.Login_Test_Poorna.Login_Error_MessageTC01()'><b>Login_Error_MessageTC01</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
 <td></td>
-<td>1</td>
-<td>test_Poorna.Login_Test_Poorna@545de5a4</td></tr>
+<td>2</td>
+<td>test_Poorna.Login_Test_Poorna@649725e3</td></tr>
 <tr>
 <td title='test_Poorna.Login_Test_Poorna.ClickRememberMeTC3()'><b>ClickRememberMeTC3</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
 <td></td>
-<td>2</td>
-<td>test_Poorna.Login_Test_Poorna@545de5a4</td></tr>
+<td>4</td>
+<td>test_Poorna.Login_Test_Poorna@649725e3</td></tr>
 <tr>
-<td title='test_Poorna.Login_Test_Poorna.Login_Error_MessageTC01()'><b>Login_Error_MessageTC01</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
+<td title='test_Poorna.Login_Test_Poorna.PasswordRest_Tc04_A()'><b>PasswordRest_Tc04_A</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
 <td></td>
 <td>1</td>
-<td>test_Poorna.Login_Test_Poorna@545de5a4</td></tr>
-<tr>
-<td title='test_Poorna.Login_Test_Poorna.Login_HomePage_Displayed02()'><b>Login_HomePage_Displayed02</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
-<td></td>
-<td>6</td>
-<td>test_Poorna.Login_Test_Poorna@545de5a4</td></tr>
+<td>test_Poorna.Login_Test_Poorna@649725e3</td></tr>
 <tr>
 <td title='test_Poorna.Login_Test_Poorna.WrongUserNameandPassword_TC04B()'><b>WrongUserNameandPassword_TC04B</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
 <td></td>
-<td>13</td>
-<td>test_Poorna.Login_Test_Poorna@545de5a4</td></tr>
+<td>12</td>
+<td>test_Poorna.Login_Test_Poorna@649725e3</td></tr>
+<tr>
+<td title='test_Poorna.Login_Test_Poorna.Login_HomePage_Displayed02()'><b>Login_HomePage_Displayed02</b><br>Test class: test_Poorna.Login_Test_Poorna</td>
+<td></td>
+<td>8</td>
+<td>test_Poorna.Login_Test_Poorna@649725e3</td></tr>
 </table><p>
 </body>
 </html>

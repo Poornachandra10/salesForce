@@ -6,21 +6,22 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
+import Listeners_Poorna.SFDC_Listeners_Poorna;
 import constants_Poorna.File_constants_Poorna;
 import file_utiles_Poorna.Properties_Files_Utils_Poorna;
 import pages_Poorna.Login_Page_Poorna;
 
+@Listeners(SFDC_Listeners_Poorna.class)
 public class Login_Test_Poorna extends Base_Test_Poorna {
 	protected static Logger logger = LogManager.getLogger("");
 
 	//Login +ve test case
-	@Test(enabled = false)
+	@Test//(enabled = false)
 	public void LoginTC02() throws IOException, InterruptedException {
 		WebDriver driver = Base_Test_Poorna.getDriver();
 
@@ -41,13 +42,13 @@ public class Login_Test_Poorna extends Base_Test_Poorna {
 		test.log(Status.INFO, "Password entered");
 		// Day 9 Checking the Rememberme check box is clicked,and the method it self we
 		// are asking to click. if not we are printing not checked
-		//Assert.assertTrue(LPP.selectRememberMeCheckBox(), "Remember me checkbox shoulb be selected");
+		Assert.assertTrue(LPP.selectRememberMeCheckBox(driver), "Remember me checkbox shoulb be selected");
 		test.log(Status.INFO, "RememberMe checked");
 		Thread.sleep(2000);
 		LPP.ClickLoginButton(driver);
 		test.log(Status.INFO, "Login button clicked");
 //Day 9 Home page displayed or not.
-	//	Assert.assertTrue(LPP.isHomePageDisplayed(), "Home page should Display");
+	Assert.assertTrue(LPP.isHomePageDisplayed(driver), "Home page should Display");
 		test.pass("TC02 Login passed");
 //Day 9 checking logout
 
