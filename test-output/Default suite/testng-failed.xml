@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_Poorna.Login_Test_Poorna">
+      <class name="test_Poorna.create_Opp_Test_Poorna">
         <methods>
           <include name="setUp"/>
           <include name="teardown"/>
+          <include name="create_new_Opp_TC16"/>
           <include name="setDriver"/>
-          <include name="LoginTC02"/>
         </methods>
-      </class> <!-- test_Poorna.Login_Test_Poorna -->
+      </class> <!-- test_Poorna.create_Opp_Test_Poorna -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

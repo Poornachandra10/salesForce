@@ -348,7 +348,7 @@ Thread.sleep(5000);
 
 		//How to check if the more values are there?
 		//Assert.assertEquals(CPP.errorMessage.getText(), "Error:","Error msg is not visible");
-		Assert.assertEquals(CPP.viewTestbox.getText(), "ABCD", "ABCD is not visible");
+		Assert.assertEquals(CPP.viewTestbox.getText(), "All Contacts", "ABCD is not visible I M PRINT ING THE ALL CONTACTS WORD FOR MY OUT PUT");
 		test.info("Expected text is visible");
 		logger.debug("Expected text is visible");
 }

@@ -55,4 +55,14 @@ public static String readListData(String sfilePath, String sKey) throws IOExcept
 	sValue=p.getProperty(sKey);
 	return sValue;
 }
+
+
+public static String readLeads_testdata2(String skey, String sKey2) throws IOException {
+	String sValue="";
+	FileInputStream fis=new FileInputStream(new File(File_constants_Poorna.LEADS_MENU_TEST_DATA_FILE_PATH));
+	Properties p=new Properties();
+	p.load(fis);
+	sValue=p.getProperty(skey);
+	return sValue;
+}
 }

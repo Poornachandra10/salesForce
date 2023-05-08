@@ -10,7 +10,6 @@ public class File_constants_Poorna {
 			+"\\SaleForce_Info\\Leads_Test_Data_Poorna.Properties";
 	
 	
-	
 public static final String USER_MENU_FILE_UPLOAD_PATH="C:\\Users\\poorn\\SalesForce Testing\\learning stuffs\\demo";
 public static final String USER_MENU_PHOTO_UPLOAD_PATH="C:\\Users\\poorn\\Pictures\\Automation_testing vodes\\flower";
 public static final String CONTACTS_PAGE_LASTNAME_UPDATE="C:\\Users\\poorn\\eclipse-workspace\\salesforce\\SaleForce_Info\\Contacts_Testdata.Properties";

@@ -50,21 +50,36 @@ public class Login_Page_Poorna extends Base_Page_Poorna {
 	@FindBy(xpath="//*[@id='userNavLabel']")
 	public WebElement homeUserMenu;
 	
-	@FindBy(id = "userNav-menuItems/a[4]")
+	@FindBy (xpath="//a[@title='Logout']")
+	//(id = "userNav-menuItems/a[4]")
 	public WebElement Logout;
 
 	@FindBy(xpath = "//div[@id='userNav-menuItems']/a")
 	public List<WebElement> userMenuOptions;
 
-
+	// forget pass word ku user name entering field xpath //*[@id='un']
+	
+	@FindBy (xpath ="//*[@id='un']")
+	public WebElement forgetEmail;
+	
+//WebElement logout = driver.findElement(By.xpath("//a[@title='Logout']"));
 	/*
 	 * @FindBy(id = "userNavLabel") public WebElement homeUserMenu;
 	 */
 
+	public void sendForgotPasswordValidGmail(WebDriver driver, String email) {
+		if(forgetEmail.isDisplayed()) {
+			forgetEmail.sendKeys(email);
+		}else {
+			System.out.println("Forget password text box is not opened");
+		}
+	}
 //Dat 1 class: creating a method to check is it available or not and sending the values
 	public void enterUserName(WebDriver driver, String userName) {
+		
 		if (username.isDisplayed()) {
 			username.clear();
+			
 			username.sendKeys(userName);
 		} else
 			System.out.println("Username element is not visible");
@@ -161,15 +176,17 @@ public boolean isLoginPageDisplayed(WebDriver driver) {
 	 * @FindBy(id = "forgotPassForm") public WebElement passwordResetScreen;
 	 */
 	public void forgotPassWord(WebDriver driver) {
+		Common_Utils_Poorna.waitForElement(driver, forgotPassword);
 		if (forgotPassword.isDisplayed()) {
 			forgotPassword.click();
 		} else {
-			System.out.println("forgotPassword button  is not visible");
+			System.out.println("forgotPassword button is not visible");
 		}
 
 	}
 	
 public void clicklogout(WebDriver driver) {
+	Common_Utils_Poorna.waitForElement(driver, homeUserMenu);
 	if(homeUserMenu.isDisplayed()) {
 		homeUserMenu.click();
 		Common_Utils_Poorna.waitForElement(driver, Logout);

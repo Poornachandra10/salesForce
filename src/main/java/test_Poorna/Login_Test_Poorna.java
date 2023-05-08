@@ -33,24 +33,22 @@ public class Login_Test_Poorna extends Base_Test_Poorna {
 		LPP.enterUserName(driver, Properties_Files_Utils_Poorna
 				.readPropertiesFile(File_constants_Poorna.CREDENTIALS_FILE_PATH, "Sales.username"));
 		test.info("entered username");
-		// Day 8 Checking the user name entered*******important question***** not worked
-		// for me:next line
+		
 //Assert.assertEquals(LPP.getUserName(driver),Properties_Files_Utils_Poorna.readPropertiesFile(File_constants_Poorna.CREDENTIALS_FILE_PATH, "Sales.username" ));
-		Thread.sleep(2000);
+		
 		LPP.enterPassword(driver, Properties_Files_Utils_Poorna
 				.readPropertiesFile(File_constants_Poorna.CREDENTIALS_FILE_PATH, "Sales.password"));
 		test.log(Status.INFO, "Password entered");
-		// Day 9 Checking the Rememberme check box is clicked,and the method it self we
-		// are asking to click. if not we are printing not checked
+		
 		Assert.assertTrue(LPP.selectRememberMeCheckBox(driver), "Remember me checkbox shoulb be selected");
 		test.log(Status.INFO, "RememberMe checked");
-		Thread.sleep(2000);
+		
 		LPP.ClickLoginButton(driver);
 		test.log(Status.INFO, "Login button clicked");
-//Day 9 Home page displayed or not.
+
 	Assert.assertTrue(LPP.isHomePageDisplayed(driver), "Home page should Display");
 		test.pass("TC02 Login passed");
-//Day 9 checking logout
+
 
 //Assert.assertTrue(LPP.isLoginPageDisplayed(driver), "Login Page Should be displayed");
 
@@ -139,6 +137,14 @@ public class Login_Test_Poorna extends Base_Test_Poorna {
 
 		Assert.assertTrue(LPP.selectRememberMeCheckBox(driver), "Remember me checkbox shoulb be selected");
 		test.log(Status.INFO, "RememberMe checked");
+		
+		
+		LPP.ClickLoginButton(driver);
+		test.log(Status.INFO, "Login button clicked");
+		logger.debug("Login_Test_Poorna TC2 Login_HomePage_Displayed_ entered username and password");
+
+		LPP.clicklogout(driver);
+		test.log(Status.INFO, "logout button clicked");
 		test.pass("TC03 RememberMe check box clicking - passed");
 	}
 	//TC 04Password reset message page is displayed. An email associated with the <username> account is sent.
@@ -158,7 +164,8 @@ public class Login_Test_Poorna extends Base_Test_Poorna {
 		LPP.forgotPassWord(driver);
 		test.info("clicked forgotPassWord");
 		logger.debug("Login_Test_Poorna TC3 Login_forgotPassWordbutton clicked");
-		
+		LPP.sendForgotPasswordValidGmail(driver, Properties_Files_Utils_Poorna.readPropertiesFile(File_constants_Poorna.CREDENTIALS_FILE_PATH, "Forget.email"));
+		test.info("clicked forgotPassWord");
 		test.pass("TC04 clicking the Password reset button -passed");
 	}
 	@Test
