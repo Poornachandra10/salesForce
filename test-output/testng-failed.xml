@@ -7,8 +7,8 @@
         <methods>
           <include name="setUp"/>
           <include name="teardown"/>
-          <include name="create_new_Opp_TC16"/>
           <include name="setDriver"/>
+          <include name="reports_struck_Opp_TC18"/>
         </methods>
       </class> <!-- test_Poorna.create_Opp_Test_Poorna -->
     </classes>

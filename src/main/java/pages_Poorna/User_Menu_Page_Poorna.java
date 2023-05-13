@@ -238,6 +238,7 @@ public class User_Menu_Page_Poorna extends Base_Page_Poorna {
 	@FindBy(xpath = "(//*[@class='contentFileTitle'])[1]")
 	public WebElement verifyFilePostElement;
 
+	
 	//trying by my own
 	/*
 	 * @FindBy(xpath = "//*[@id=\'PersonalInfo_font\']") public WebElement

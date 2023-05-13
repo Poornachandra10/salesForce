@@ -91,10 +91,23 @@ public class create_Opp_Page_Poorna {
 	@FindBy (xpath="//*[@id='opp17']")
 	public WebElement primaryCamp;
 	
+@FindBy(xpath="//*[text()='Stuck Opportunities']")
+public WebElement struckOpp;
+
 	
-	
-	
-	 
+@FindBy (xpath="//*[@class='noSecondHeader pageType']")
+public WebElement oppPageVerify;
+
+@FindBy (xpath="//*[@id='quarter_q']")
+public WebElement intervalOpp;
+
+@FindBy (xpath="//*[@id='open']")
+public WebElement openCheck;
+
+
+
+
+
 	public void sendingVal(WebDriver driver) {
 		Common_Utils_Poorna.waitForElement(driver, oppName);
 		oppName.sendKeys("ABCD");
@@ -169,13 +182,7 @@ public class create_Opp_Page_Poorna {
 	 * Select dropdown = new Select(Stage); dropdown.selectByValue("Qualification");
 	 * driver.findElement(By.xpath("//input[@id='opp12']")).sendKeys("80");
 	 * driver.close(); System.out.println("TC16_CreatenewOpp is completed");
-	 *
-	 *
-	 *
-	 *
-	 *
-	 *
-	 * 
+	
 	 * 
 	 */
 
@@ -190,6 +197,29 @@ public class create_Opp_Page_Poorna {
 			return false;
 	}
 
+	public void intervalOppdropdown(WebDriver driver) {
+		Common_Utils_Poorna.waitForElement(driver, intervalOpp);
+		Select dropDownInterval =new Select(intervalOpp);
+		List<WebElement> elementCount=dropDownInterval.getOptions();
+		int size=elementCount.size();
+		for (int i=0; i<size; i++) {
+			String val=elementCount.get(i).getText();
+			System.out.println("Interval values in list "+val);
+		}
+	}
+	
+	public void openCheckCheck(WebDriver driver) {
+		Common_Utils_Poorna.waitForElement(driver, openCheck);
+		Select select=new Select(openCheck);
+		
+		List<WebElement> ele=select.getOptions();
+		int size=ele.size();
+		for(int i=0; i<size; i++)
+		{
+			String val= ele.get(i).getText();
+		System.out.println("Include values in list "+val);	
+		}
+		}
 	public void verify_Opp_Page_DropDown(WebDriver driver) throws IOException {
 		Common_Utils_Poorna.waitForElement(driver, OpportunitiesDropDown);
 		Select dropdown = new Select(OpportunitiesDropDown);
@@ -245,4 +275,18 @@ public class create_Opp_Page_Poorna {
 		Common_Utils_Poorna.waitForElement(driver, createNewButton);
 		createNewButton.click();
 	}
+	
+	
+	//Click on Stuck Opportunities link  under Reports.
+	//Report Page with the Opportunities that are Stuck will be displayed.
+public void clickStruckOpp(WebDriver driver) {
+	Common_Utils_Poorna.waitForElement(driver, struckOpp);
+	if(struckOpp.isDisplayed()) {
+		struckOpp.click();
+	}else {
+		System.out.println("struck Opp., is not visible");
+	}
+}
+	
+	
 }
