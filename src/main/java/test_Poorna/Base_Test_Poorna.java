@@ -60,9 +60,12 @@ public class Base_Test_Poorna {
 		
 	
 
-	/*
-	 * @AfterMethod public void closeBrowser() { Base_Test_Poorna.removeDriver(); }
-	 */
+//	
+//	  @AfterMethod 
+//	  public void closeBrowser() {
+//		  Base_Test_Poorna.removeDriver(); 
+//		  }
+	 
 
 	public static WebDriver getDriver() {
 		return threadLocalDriver.get();

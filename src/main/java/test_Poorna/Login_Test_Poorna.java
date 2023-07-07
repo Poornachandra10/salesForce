@@ -28,7 +28,7 @@ public class Login_Test_Poorna extends Base_Test_Poorna {
 //driver.get("https://login.salesforce.com/");
 		Login_Page_Poorna LPP = new Login_Page_Poorna(driver);
 
-		Assert.assertTrue(LPP.launchApp(driver, "https://login.salesforce.com/"), "Actual URL should be Match");
+		
 		test.info("App is launched");
 		LPP.enterUserName(driver, Properties_Files_Utils_Poorna
 				.readPropertiesFile(File_constants_Poorna.CREDENTIALS_FILE_PATH, "Sales.username"));

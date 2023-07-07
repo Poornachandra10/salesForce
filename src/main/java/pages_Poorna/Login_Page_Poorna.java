@@ -17,7 +17,9 @@ public class Login_Page_Poorna extends Base_Page_Poorna {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id = "username")
+	@FindBy
+	//(xpath="//*[@name='username']")
+	(id = "username")
 	public WebElement username;
 	@FindBy(id = "password")
 	public WebElement password;
